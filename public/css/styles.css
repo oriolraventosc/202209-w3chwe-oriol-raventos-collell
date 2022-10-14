@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pokemons-container {
+  margin: 0;
+  height: 100vh;
+  background-image: url(https://wallpapercave.com/dwp2x/wp2595112.jpg);
+}
