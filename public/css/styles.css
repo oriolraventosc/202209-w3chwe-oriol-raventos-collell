@@ -41,3 +41,24 @@ ul {
   background-color: rgb(2, 48, 82, 55%);
   position: sticky;
 }
+
+.pokemon-basic-info {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-column: 5;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 0;
+}
+
+span {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: bold;
+}
