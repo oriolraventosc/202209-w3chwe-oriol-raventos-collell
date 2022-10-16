@@ -19,9 +19,11 @@ class PokemonCard extends Component implements BasicPokemonInfo {
     super.render();
 
     this.domElement.innerHTML = `
-<img href="pokemon.html" class="pokemon-basic-info__image" src="${frontDefault}" alt="${name} Pokemon" />
-<span class="pokemon-basic-info__name"><a onclick="" href="pokemon.html">${name}</a></span>
-`;
+    <div class="poke-card">
+      <img href="pokemon.html" class="pokemon-basic-info__image" src="${frontDefault}" alt="${name} Pokemon" />
+      <span class="pokemon-basic-info__name"><a class="poke-card-pokemon__name" onclick="" href="pokemon.html">${name}</a></span>
+    </div>
+    `;
   }
 }
 
