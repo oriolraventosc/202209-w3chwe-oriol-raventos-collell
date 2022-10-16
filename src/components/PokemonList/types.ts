@@ -1,4 +1,4 @@
 interface List {
-  page: number;
+  offset: number;
 }
 export default List;
