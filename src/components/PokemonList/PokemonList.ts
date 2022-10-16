@@ -3,8 +3,7 @@ import type List from "./types.js";
 import { showPokemons } from "../../utils/getPokemons.js";
 
 class PokemonList extends Component implements List {
-  page: number;
-
+  offset: number;
   constructor(parentElement: HTMLElement) {
     super(parentElement, "pokemon-container-list", "div");
   }
@@ -15,12 +14,26 @@ class PokemonList extends Component implements List {
     this.domElement.innerHTML = `
     <ol class="pokemon-list"></ol>
     `;
-
-    const pokemonsCardsFather: HTMLElement =
-      document.querySelector(".pokemon-list");
-
-    await showPokemons(pokemonsCardsFather);
   }
+
+  /* EventListenerNextPage() {
+    const buttonToNextPage: HTMLButtonElement =
+      document.querySelector(".next-page");
+    const mainContainerIndex: HTMLElement = document.querySelector(
+      ".pokemons-container"
+    );
+    this.offset = 1;
+    buttonToNextPage.addEventListener("click", async () => {
+      if (this.offset < 1154) {
+        this.offset += 20;
+      } else {
+        this.offset = 1154;
+      }
+
+      const newPokeList = new PokemonList(mainContainerIndex, this.offset);
+      await newPokeList.render();
+    });
+  } */
 }
 
 export default PokemonList;
