@@ -1,5 +1,4 @@
-export interface PokemonInfo {
-  id: number;
+interface BasicPokemonInfoExtra {
   name: string;
   sprites: {
     front_default: string;
@@ -18,14 +17,4 @@ export interface PokemonInfo {
     { base_stat: number; stat: { name: string } }
   ];
 }
-
-export interface PokemonInfoLists {
-  count: number;
-  next: string;
-  results: [
-    {
-      name: string;
-      url: string;
-    }
-  ];
-}
+export default BasicPokemonInfoExtra;
