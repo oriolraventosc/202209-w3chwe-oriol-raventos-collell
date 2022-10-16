@@ -7,7 +7,7 @@ class PokemonCard extends Component implements BasicPokemonInfo {
   url: string;
 
   constructor(parentElement: HTMLElement, public pokemonInfo: PokemonInfo) {
-    super(parentElement, "pokemon-basic-info", "li");
+    super(parentElement, "pokemon-list__item", "li");
   }
 
   render(): void {
@@ -19,9 +19,9 @@ class PokemonCard extends Component implements BasicPokemonInfo {
     super.render();
 
     this.domElement.innerHTML = `
-    <div class="poke-card">
-      <img href="pokemon.html" class="pokemon-basic-info__image" src="${frontDefault}" alt="${name} Pokemon" />
-      <span class="pokemon-basic-info__name"><a class="poke-card-pokemon__name" onclick="" href="pokemon.html">${name}</a></span>
+    <div class="pokemon-list__item__card">
+      <img href="pokemon.html" class="pokemon-list__item__image" src="${frontDefault}" alt="${name} Pokemon" />
+      <span class="pokemon-list__item__name"><a class="poke-card-pokemon__name" onclick="" href="pokemon.html">${name}</a></span>
     </div>
     `;
   }
