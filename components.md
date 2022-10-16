@@ -30,9 +30,9 @@
 
 ### Get action:
 
-#### ·When clicked on the pokemons card must change to the chosen pokemon details page
+#### ·When clicked on the pokemons card must change to the chosen pokemon details page (not reachable)
 
-#### ·When clicked the button "next page" the home page must show the following numbers of pokemons
+#### ·When clicked the button "next page" the home page must show the following numbers of pokemons (not reachable)
 
 ## PokemonCard
 

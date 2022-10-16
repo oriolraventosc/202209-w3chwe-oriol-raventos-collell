@@ -43,8 +43,8 @@ class PokemonDetailsBasicInformation extends Component {
 
     this.domElement.innerHTML = `
     <div class="pokemon-details-card__header">
-      <span class="pokemon-basic-info__name">${name}</span>
-      <img href="pokemon.html" class="pokemon-basic-info__image" src="${frontDefault}" alt="${name} Pokemon" />
+      <span class="pokemon-details-card__name">${name}</span>
+      <img href="pokemon.html" class="pokemon-details-card__image" src="${frontDefault}" alt="${name} Pokemon" />
     </div>
     <div class="pokemon-details-card__stats">
       <span class="pokemon-basic-info__stat">${hp}: ${hpNumber}</span>
