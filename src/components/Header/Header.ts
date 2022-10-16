@@ -9,7 +9,7 @@ class Header extends Component {
     super.render();
 
     this.domElement.innerHTML = `
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon series logo" class="header__logo"/>
+    <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon series logo" class="header__logo"/></a>
     <nav class="navigation-menu" href="index.html">
       <ul class="navigation-menu__list">
         <li class="navigation-menu__item"><a href="index.html">Explore Pokemons</a></li>
